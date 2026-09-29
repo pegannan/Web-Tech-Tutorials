@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <p>Fill this form for admissions:</p>
+
+    <form action="#" method="post">
+        <label for="name">Name: </label><br>
+        <input type="text" id="user-name" name="name" required><br>
+
+        <label for="email">Email: </label><br>
+        <input type="email" id="user-email" name="email" required><br>
+
+        <label for="password">Enter Password <i>(password must be at least 8 characters and a symbol)</i>: </label><br>
+        <input type="password" id="user-password" name="password" required minlength="8" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[!@#$%^&*()-+])"><br>
+
+        <label>Select Gender: </label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <label>Select Interest:</label><br>
+        <input type="checkbox" id="gaming" name="gaming" value="gaming">
+        <label for="gaming">Gaming</label><br>
+        <input type="checkbox" id="sports" name="sports" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="reading" name="reading" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="music" name="music" value="music">
+        <label for="music">Music</label><br>
+
+        <label for="course">Choose your Courses</label><br>
+            <select id="courses" name="courses">
+                <option id="option1">Select one</option>
+                <option id="option2">Computer Science</option>
+                <option id="option2">Business</option>
+                <option id="option3">Engineering</option>
+            </select><br>
+
+
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
